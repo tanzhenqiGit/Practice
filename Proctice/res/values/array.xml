@@ -7,6 +7,13 @@
         <item>3 </item>
     </string-array>
     
+    <string-array name="aiqiTabContents">
+        <item>@string/home_page</item>
+        <item>@string/classify</item>
+        <item>@string/search</item>
+        <item>@string/person_datum</item>
+        <item>@string/more</item>
+    </string-array>
 </resources>
     
     

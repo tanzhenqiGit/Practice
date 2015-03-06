@@ -1,22 +1,42 @@
 package com.example.proctice;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import com.example.proctice.common.CommonListActivity;
 
-public class HomeActivity extends Activity {
+
+import aiqi.imitation.AiQiHome;
+import aiqi.imitation.util.LOG_String;
+import android.content.Intent;
+import android.view.View;
+import android.widget.AdapterView;
+
+public class HomeActivity extends CommonListActivity<String> {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home);
+	public void onListItemClicked(AdapterView<?> parent, View view,
+			int position, long id) {
+		switch(position)
+		{
+		case AIQI:
+			Intent aiqiIntent = new Intent(HomeActivity.this, AiQiHome.class);
+			startActivity(aiqiIntent);
+			break;
+		default:
+			break;
+		}
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.home, menu);
-		return true;
+	public String[] getListContents() {
+		mContents = getResources().getStringArray(R.array.projectContents);
+		return mContents;
 	}
 
+	@Override
+	public String getTAG() {
+		return TAG.toString();
+	}
+
+	private String[] mContents;
+	private LOG_String TAG = new LOG_String();
+	public final int AIQI = 0;
 }

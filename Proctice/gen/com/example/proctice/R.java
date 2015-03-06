@@ -8,6 +8,10 @@
 package com.example.proctice;
 
 public final class R {
+    public static final class array {
+        public static final int aiqiTabContents=0x7f040001;
+        public static final int projectContents=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -17,25 +21,107 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int button_search_bg_normal=0x7f020000;
+        public static final int button_search_bg_press=0x7f020001;
+        public static final int channel_ipc_list_leaf_item_bg_normal=0x7f020002;
+        public static final int channel_ipc_list_leaf_item_bg_press=0x7f020003;
+        public static final int channel_type_cartoon_normal=0x7f020004;
+        public static final int channel_type_cartoon_press=0x7f020005;
+        public static final int channel_type_fun_normal=0x7f020006;
+        public static final int channel_type_fun_press=0x7f020007;
+        public static final int channel_type_movie_normal=0x7f020008;
+        public static final int channel_type_movie_press=0x7f020009;
+        public static final int channel_type_music_normal=0x7f02000a;
+        public static final int channel_type_music_press=0x7f02000b;
+        public static final int channel_type_publicity_normal=0x7f02000c;
+        public static final int channel_type_publicity_press=0x7f02000d;
+        public static final int channel_type_qiyi_works_normal=0x7f02000e;
+        public static final int channel_type_qiyi_works_press=0x7f02000f;
+        public static final int channel_type_record_normal=0x7f020010;
+        public static final int channel_type_record_press=0x7f020011;
+        public static final int channel_type_tourism_normal=0x7f020012;
+        public static final int channel_type_tourism_press=0x7f020013;
+        public static final int channel_type_tv_normal=0x7f020014;
+        public static final int channel_type_tv_press=0x7f020015;
+        public static final int channel_type_video_clips_normal=0x7f020016;
+        public static final int channel_type_video_clips_press=0x7f020017;
+        public static final int commlist_head_bg=0x7f020018;
+        public static final int detail_dialog_bg=0x7f020019;
+        public static final int edittext_search=0x7f02001a;
+        public static final int edittext_search_image=0x7f02001b;
+        public static final int flickbar_bg=0x7f02001c;
+        public static final int flickbtn_bg_center_normal=0x7f02001d;
+        public static final int home_group_bg=0x7f02001e;
+        public static final int ic_launcher=0x7f02001f;
+        public static final int icon_1_c=0x7f020020;
+        public static final int icon_1_n=0x7f020021;
+        public static final int icon_2_c=0x7f020022;
+        public static final int icon_2_n=0x7f020023;
+        public static final int icon_3_c=0x7f020024;
+        public static final int icon_3_n=0x7f020025;
+        public static final int icon_4_c=0x7f020026;
+        public static final int icon_4_n=0x7f020027;
+        public static final int icon_5_c=0x7f020028;
+        public static final int icon_5_n=0x7f020029;
+        public static final int item_more_bg=0x7f02002a;
+        public static final int item_more_bg_selected=0x7f02002b;
+        public static final int list_indecator_button=0x7f02002c;
+        public static final int list_indecator_button_down=0x7f02002d;
+        public static final int list_item_bg_album_normal=0x7f02002e;
+        public static final int list_item_bg_album_selected=0x7f02002f;
+        public static final int list_item_bg_operate=0x7f020030;
+        public static final int list_item_bg_operate_selected=0x7f020031;
+        public static final int list_item_divide_operate=0x7f020032;
+        public static final int loadmovie_bg=0x7f020033;
+        public static final int logo=0x7f020034;
+        public static final int phonetabview_bg=0x7f020035;
+        public static final int phonetitlebar_bg=0x7f020036;
+        public static final int play_btn=0x7f020037;
+        public static final int play_btn_pressed=0x7f020038;
+        public static final int ratingbar_full_empty=0x7f020039;
+        public static final int ratingbar_full_filled=0x7f02003a;
+        public static final int search_history_clear_btn_bg_normal=0x7f02003b;
+        public static final int search_history_clear_btn_bg_press=0x7f02003c;
+        public static final int search_main_tree_bg=0x7f02003d;
+        public static final int t1=0x7f02003e;
+        public static final int t2=0x7f02003f;
+        public static final int t3=0x7f020040;
+        public static final int video_cover_default=0x7f020041;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f090006;
+        public static final int common_list_main_list=0x7f090001;
+        public static final int home_page_view_ganllery=0x7f090002;
+        public static final int home_page_view_list=0x7f090003;
+        public static final int realtabcontent=0x7f090000;
+        public static final int tab_item_view_img=0x7f090004;
+        public static final int tab_item_view_txt=0x7f090005;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
+        public static final int aiqi_home=0x7f030001;
+        public static final int aiqi_tithle_view=0x7f030002;
+        public static final int common_llist_main=0x7f030003;
+        public static final int home_page_view=0x7f030004;
+        public static final int tab_item_view=0x7f030005;
     }
     public static final class menu {
-        public static final int home=0x7f070000;
+        public static final int home=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int classify=0x7f060005;
+        public static final int default_txt=0x7f060003;
+        public static final int hello_world=0x7f060002;
+        public static final int home_page=0x7f060004;
+        public static final int more=0x7f060008;
+        public static final int person_datum=0x7f060007;
+        public static final int search=0x7f060006;
     }
     public static final class style {
         /** 
@@ -59,10 +145,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        public static final int activity_title_text=0x7f070002;
     }
 }
