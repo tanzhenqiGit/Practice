@@ -14,6 +14,14 @@
         <item>@string/person_datum</item>
         <item>@string/more</item>
     </string-array>
+
+    <string-array name="listGroupContents">
+        <item>同步剧场</item>
+        <item>奇艺出品</item>
+        <item>热播电影</item>
+        <item>3月片花速递</item>
+        <item>动漫乐园</item>
+    </string-array>
 </resources>
     
     

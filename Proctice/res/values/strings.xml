@@ -10,5 +10,8 @@
     <string name="search">搜索</string>
     <string name="person_datum">我的资料</string>
     <string name="more">更多</string>
-
+    <string name="movie_name">碟中碟4</string>
+    <string name="movie_grade">8.5分</string>
+	<string name="movie_order">集数 ：</string>
+	<string name="movie_order_number">37</string>
 </resources>

@@ -1,5 +1,6 @@
 package aiqi.imitation;
 
+import aiqi.imitation.util.GalleryAdapter;
 import aiqi.imitation.util.LOG_String;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -10,11 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.proctice.R;
 
+@SuppressWarnings("deprecation")
 public class HomePageView extends Fragment{
 
 	@SuppressLint("InflateParams")
@@ -23,6 +26,8 @@ public class HomePageView extends Fragment{
 			Bundle savedInstanceState) {
 		Log.d(mTAG.toString(), "homePageView onCreateView");
 		mHomePageView = inflater.inflate(R.layout.home_page_view, null);
+		mExpandListHeaderView  = inflater.inflate(R.layout.aiqi_expand_lsit_hander_view , null);
+
 		initialize();
 		return mHomePageView;
 	}
@@ -51,29 +56,51 @@ public class HomePageView extends Fragment{
 
 	private void initialize()
 	{
+		 mGroups = mHomePageView.getResources().getStringArray(R.array.listGroupContents);
+		 mAdapter = new AiQiExpandAdapter();
+		 
 		if (mHomePageView != null) {
-			mExpandableListView = (ExpandableListView) mHomePageView.findViewById(R.id.home_page_view_list);
+			mExpandableListView = (ExpandableListView) mHomePageView
+					.findViewById(R.id.home_page_view_list);
+			
+			if (mExpandListHeaderView != null) {
+				mGallery = (Gallery) mExpandListHeaderView
+						.findViewById(R.id.aiqi_expand_list_hander_view_gallery);
+				GalleryAdapter adapter = new GalleryAdapter(mHomePageView.getContext());
+				if (mGallery != null && adapter != null)
+				{
+					mGallery.setAdapter(adapter);
+					mExpandableListView.addHeaderView(mExpandListHeaderView);
+				}
+			} else {
+				Log.e(mTAG.toString(), "HomePageView initialize mExpandListHeaderView == null");
+				return;
+			}
+			
 			if (mExpandableListView != null || mAdapter != null) {
 				mExpandableListView.setAdapter(mAdapter);
 			} else {
 				Log.e(mTAG.toString(), "mExpandableListView == null || mAdapter == null");
 				return;
 			}
+	
 		}
 	}
 	
 	private View mHomePageView;
 	private LOG_String mTAG = new LOG_String();
+	private View mExpandListHeaderView;
+	private Gallery mGallery;
 	private ExpandableListView mExpandableListView;
-	private AiQiExpandAdapter mAdapter = new AiQiExpandAdapter();
-	
+	private AiQiExpandAdapter mAdapter;
+	private String[] mGroups;
 	@SuppressLint("InflateParams")
 	private class AiQiExpandAdapter extends BaseExpandableListAdapter
 	{
 
 		@Override
 		public int getGroupCount() {
-			return GROUP_LENGTH;
+			return mGroups.length;
 		}
 
 		@Override
@@ -143,7 +170,11 @@ public class HomePageView extends Fragment{
 		
 		public AiQiExpandAdapter()
 		{
+			Log.d(mTAG.toString(), "AiQiExpandAdapter");
 			setChildContents();
+			if (mGroups == null) {
+				Log.e(mTAG.toString(), "AiQiExpandAdapter mGroups == null");
+			}
 		}
 		
 		private boolean setChildContents()
@@ -159,15 +190,9 @@ public class HomePageView extends Fragment{
 			return true;
 		}
 		
-		private String[] mGroups = new String[] { 
-				"同步剧场", 
-				"奇艺出品", 
-				"热播电影", 
-				"3月片花速递", 
-				"动漫乐园" 
-		};
+
 		private String[][] mChilds;
 		private final int CHILD_LENGTH = 10;
-		private final int GROUP_LENGTH = mGroups.length;
+		private final int GROUP_LENGTH = 5;
 	}
 }
