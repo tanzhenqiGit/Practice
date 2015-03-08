@@ -7,5 +7,7 @@ public class LOG_String {
 		return mTAG;
 	}
 	
+	public final boolean DEBUG = true;
+	
 	public String mTAG = "Aiqi";
 }

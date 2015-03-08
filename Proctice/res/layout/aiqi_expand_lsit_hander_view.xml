@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.example.proctice">
     
     <Gallery 
         android:id="@+id/aiqi_expand_list_hander_view_gallery"
@@ -10,6 +10,37 @@
         android:layout_height="wrap_content"
         android:spacing="5dip"
         />
-   
+      <LinearLayout
+        android:id="@+id/aiqi_expand_list_hander_view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#65000000"
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/aiqi_expand_list_hander_view_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/movie_demo"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+       
+        <aiqi.imitation.util.FlowGalleryIndicator
+            android:id="@+id/aiqi_expand_list_hander_view_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+			app:count="4"
+            app:point_normal_color="#45000000"
+            app:point_radius="3dip"
+            app:point_seleted_color="#ffffff"
+            app:point_size="5dip"
+            app:space="10dip"/>
+         </LinearLayout>
+
+</FrameLayout>

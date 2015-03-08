@@ -1,14 +1,24 @@
 package aiqi.imitation;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
+import aiqi.imitation.util.FlowGalleryIndicator;
 import aiqi.imitation.util.GalleryAdapter;
 import aiqi.imitation.util.LOG_String;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Gallery;
@@ -66,12 +76,41 @@ public class HomePageView extends Fragment{
 			if (mExpandListHeaderView != null) {
 				mGallery = (Gallery) mExpandListHeaderView
 						.findViewById(R.id.aiqi_expand_list_hander_view_gallery);
-				GalleryAdapter adapter = new GalleryAdapter(mHomePageView.getContext());
-				if (mGallery != null && adapter != null)
+				mGalleryAdapter = new GalleryAdapter(mHomePageView.getContext());
+				if (mGallery != null && mGalleryAdapter != null)
 				{
-					mGallery.setAdapter(adapter);
+					mGallery.setAdapter(mGalleryAdapter);
 					mExpandableListView.addHeaderView(mExpandListHeaderView);
 				}
+				mGalleryIndex = (FlowGalleryIndicator) mExpandListHeaderView
+						.findViewById(R.id.aiqi_expand_list_hander_view_indicator);
+				mGalleryIndex.setmCounts(mGalleryAdapter.getCount());
+				mGallery.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+					@Override
+					public void onItemSelected(AdapterView<?> arg0, View arg1,
+							int arg2, long arg3) {
+						mGalleryIndex.setmSelected(arg2);
+					}
+
+					@Override
+					public void onNothingSelected(AdapterView<?> arg0) {
+						// TODO Auto-generated method stub
+						
+					}
+				});
+				mTimer = new Timer();
+				mTimer.schedule(new TimerTask() {
+					
+					@Override
+					public void run() {
+						if (mHandler != null)
+						{
+							mHandler.sendEmptyMessage(MSG_GALLERY_CHANGED);
+						}
+					}
+				}, 0, 5 * 1000);
+				
 			} else {
 				Log.e(mTAG.toString(), "HomePageView initialize mExpandListHeaderView == null");
 				return;
@@ -87,10 +126,56 @@ public class HomePageView extends Fragment{
 		}
 	}
 	
+	private void handlerMsg(Message msg)
+	{
+		switch (msg.what)
+		{
+		case MSG_GALLERY_CHANGED:
+			 int curPos = mGallery.getSelectedItemPosition();
+			 if (curPos < mGalleryAdapter.getCount() - 1) {
+				 curPos++;
+			 } else {
+				 curPos = 0;
+			 }
+			 
+		
+			 //mGallery.setSelection(curPos, true);
+
+			 mGallery.setLayoutAnimation(new LayoutAnimationController(
+					  AnimationUtils.loadAnimation(this.getActivity(),
+							  R.anim.gallery_in)));
+//			MotionEvent e1 = MotionEvent.obtain(SystemClock.uptimeMillis(),
+//					SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN,
+//					89.333336f, 265.33334f, 0);
+//			MotionEvent e2 = MotionEvent.obtain(SystemClock.uptimeMillis(),
+//					SystemClock.uptimeMillis(), MotionEvent.ACTION_UP,
+//					300.0f, 238.00003f, 0);
+//
+//			mGallery.onFling(e1, e2, -1300, 0);
+			break;
+		default:
+			
+			break;
+		}
+	}
+	
 	private View mHomePageView;
 	private LOG_String mTAG = new LOG_String();
 	private View mExpandListHeaderView;
+	private FlowGalleryIndicator mGalleryIndex;
 	private Gallery mGallery;
+	private GalleryAdapter mGalleryAdapter;
+	private Timer mTimer;
+	private final int MSG_GALLERY_CHANGED = 0x10;
+	private Handler mHandler = new Handler()
+	{
+
+		@Override
+		public void handleMessage(Message msg) {
+			handlerMsg(msg);
+		}
+		
+	};
 	private ExpandableListView mExpandableListView;
 	private AiQiExpandAdapter mAdapter;
 	private String[] mGroups;
@@ -191,8 +276,13 @@ public class HomePageView extends Fragment{
 		}
 		
 
+
 		private String[][] mChilds;
 		private final int CHILD_LENGTH = 10;
 		private final int GROUP_LENGTH = 5;
+
+	
+		
+		
 	}
 }

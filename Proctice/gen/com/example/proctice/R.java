@@ -8,12 +8,66 @@
 package com.example.proctice;
 
 public final class R {
+    public static final class anim {
+        public static final int gallery_in=0x7f040000;
+        public static final int gallery_out=0x7f040001;
+    }
     public static final class array {
-        public static final int aiqiTabContents=0x7f040001;
-        public static final int listGroupContents=0x7f040002;
-        public static final int projectContents=0x7f040000;
+        public static final int aiqiTabContents=0x7f050001;
+        public static final int listGroupContents=0x7f050002;
+        public static final int projectContents=0x7f050000;
     }
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int count=0x7f010000;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int point_normal_color=0x7f010004;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int point_radius=0x7f010005;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int point_seleted_color=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int point_size=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int space=0x7f010001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -22,8 +76,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int button_search_bg_normal=0x7f020000;
@@ -101,31 +155,34 @@ public final class R {
         public static final int write=0x7f020047;
     }
     public static final class id {
-        public static final int action_settings=0x7f090018;
-        public static final int aiqi_expand_list_child_layout=0x7f090000;
-        public static final int aiqi_expand_list_child_left_img=0x7f090001;
-        public static final int aiqi_expand_list_child_mid_layout=0x7f090002;
-        public static final int aiqi_expand_list_child_movie_order_group=0x7f09000b;
-        public static final int aiqi_expand_list_child_movie_order_number=0x7f09000d;
-        public static final int aiqi_expand_list_child_movie_order_txt=0x7f09000c;
-        public static final int aiqi_expand_list_child_movie_play_btn_img=0x7f09000e;
-        public static final int aiqi_expand_list_child_name_txt=0x7f090003;
-        public static final int aiqi_expand_list_child_rating_group_layout=0x7f090004;
-        public static final int aiqi_expand_list_child_rating_img0=0x7f090005;
-        public static final int aiqi_expand_list_child_rating_img1=0x7f090006;
-        public static final int aiqi_expand_list_child_rating_img2=0x7f090007;
-        public static final int aiqi_expand_list_child_rating_img3=0x7f090008;
-        public static final int aiqi_expand_list_child_rating_img4=0x7f090009;
-        public static final int aiqi_expand_list_child_rating_txt=0x7f09000a;
-        public static final int aiqi_expand_list_group_img=0x7f09000f;
-        public static final int aiqi_expand_list_group_txt=0x7f090010;
-        public static final int aiqi_expand_list_hander_view_gallery=0x7f090011;
-        public static final int aiqi_gallery_item_view_img=0x7f090012;
-        public static final int common_list_main_list=0x7f090014;
-        public static final int home_page_view_list=0x7f090015;
-        public static final int realtabcontent=0x7f090013;
-        public static final int tab_item_view_img=0x7f090016;
-        public static final int tab_item_view_txt=0x7f090017;
+        public static final int action_settings=0x7f0a001b;
+        public static final int aiqi_expand_list_child_layout=0x7f0a0000;
+        public static final int aiqi_expand_list_child_left_img=0x7f0a0001;
+        public static final int aiqi_expand_list_child_mid_layout=0x7f0a0002;
+        public static final int aiqi_expand_list_child_movie_order_group=0x7f0a000b;
+        public static final int aiqi_expand_list_child_movie_order_number=0x7f0a000d;
+        public static final int aiqi_expand_list_child_movie_order_txt=0x7f0a000c;
+        public static final int aiqi_expand_list_child_movie_play_btn_img=0x7f0a000e;
+        public static final int aiqi_expand_list_child_name_txt=0x7f0a0003;
+        public static final int aiqi_expand_list_child_rating_group_layout=0x7f0a0004;
+        public static final int aiqi_expand_list_child_rating_img0=0x7f0a0005;
+        public static final int aiqi_expand_list_child_rating_img1=0x7f0a0006;
+        public static final int aiqi_expand_list_child_rating_img2=0x7f0a0007;
+        public static final int aiqi_expand_list_child_rating_img3=0x7f0a0008;
+        public static final int aiqi_expand_list_child_rating_img4=0x7f0a0009;
+        public static final int aiqi_expand_list_child_rating_txt=0x7f0a000a;
+        public static final int aiqi_expand_list_group_img=0x7f0a000f;
+        public static final int aiqi_expand_list_group_txt=0x7f0a0010;
+        public static final int aiqi_expand_list_hander_view_gallery=0x7f0a0011;
+        public static final int aiqi_expand_list_hander_view_indicator=0x7f0a0014;
+        public static final int aiqi_expand_list_hander_view_layout=0x7f0a0012;
+        public static final int aiqi_expand_list_hander_view_txt=0x7f0a0013;
+        public static final int aiqi_gallery_item_view_img=0x7f0a0015;
+        public static final int common_list_main_list=0x7f0a0017;
+        public static final int home_page_view_list=0x7f0a0018;
+        public static final int realtabcontent=0x7f0a0016;
+        public static final int tab_item_view_img=0x7f0a0019;
+        public static final int tab_item_view_txt=0x7f0a001a;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
@@ -140,22 +197,23 @@ public final class R {
         public static final int tab_item_view=0x7f030009;
     }
     public static final class menu {
-        public static final int home=0x7f080000;
+        public static final int home=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int classify=0x7f060005;
-        public static final int default_txt=0x7f060003;
-        public static final int hello_world=0x7f060002;
-        public static final int home_page=0x7f060004;
-        public static final int more=0x7f060008;
-        public static final int movie_grade=0x7f06000a;
-        public static final int movie_name=0x7f060009;
-        public static final int movie_order=0x7f06000b;
-        public static final int movie_order_number=0x7f06000c;
-        public static final int person_datum=0x7f060007;
-        public static final int search=0x7f060006;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int classify=0x7f070005;
+        public static final int default_txt=0x7f070003;
+        public static final int hello_world=0x7f070002;
+        public static final int home_page=0x7f070004;
+        public static final int more=0x7f070008;
+        public static final int movie_demo=0x7f07000d;
+        public static final int movie_grade=0x7f07000a;
+        public static final int movie_name=0x7f070009;
+        public static final int movie_order=0x7f07000b;
+        public static final int movie_order_number=0x7f07000c;
+        public static final int person_datum=0x7f070007;
+        public static final int search=0x7f070006;
     }
     public static final class style {
         /** 
@@ -179,11 +237,123 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int activity_title_text=0x7f070002;
+        public static final int AppTheme=0x7f080001;
+        public static final int activity_title_text=0x7f080002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a FlowGalleryIndicator.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_count com.example.proctice:count}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_point_normal_color com.example.proctice:point_normal_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_point_radius com.example.proctice:point_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_point_seleted_color com.example.proctice:point_seleted_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_point_size com.example.proctice:point_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlowGalleryIndicator_space com.example.proctice:space}</code></td><td></td></tr>
+           </table>
+           @see #FlowGalleryIndicator_count
+           @see #FlowGalleryIndicator_point_normal_color
+           @see #FlowGalleryIndicator_point_radius
+           @see #FlowGalleryIndicator_point_seleted_color
+           @see #FlowGalleryIndicator_point_size
+           @see #FlowGalleryIndicator_space
+         */
+        public static final int[] FlowGalleryIndicator = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#count}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:count
+        */
+        public static final int FlowGalleryIndicator_count = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#point_normal_color}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:point_normal_color
+        */
+        public static final int FlowGalleryIndicator_point_normal_color = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#point_radius}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:point_radius
+        */
+        public static final int FlowGalleryIndicator_point_radius = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#point_seleted_color}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:point_seleted_color
+        */
+        public static final int FlowGalleryIndicator_point_seleted_color = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#point_size}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:point_size
+        */
+        public static final int FlowGalleryIndicator_point_size = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.proctice.R.attr#space}
+          attribute's value can be found in the {@link #FlowGalleryIndicator} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:space
+        */
+        public static final int FlowGalleryIndicator_space = 1;
+    };
 }
