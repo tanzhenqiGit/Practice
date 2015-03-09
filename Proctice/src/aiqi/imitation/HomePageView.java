@@ -60,6 +60,10 @@ public class HomePageView extends Fragment{
 	@Override
 	public void onDestroyView() {
 		Log.d(mTAG.toString(), "homePageView onDestroyView");
+			if (mTimer != null) {
+				mTimer.cancel();
+				mTimer = null;
+		}
 		super.onDestroyView();
 	}
 

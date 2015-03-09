@@ -40,10 +40,10 @@ public class AiQiHome extends FragmentActivity {
 			mTabHost.setup(this, getSupportFragmentManager(),R.id.realtabcontent);
 		    setmTabView();
 		    mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(getTabItemView(0)) ,HomePageView.class, null);
-		    mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(getTabItemView(1)) ,HomePageView.class, null);
-		    mTabHost.addTab(mTabHost.newTabSpec("tab3").setIndicator(getTabItemView(2)) ,HomePageView.class, null);
-		    mTabHost.addTab(mTabHost.newTabSpec("tab4").setIndicator(getTabItemView(3)) ,HomePageView.class, null);
-		    mTabHost.addTab(mTabHost.newTabSpec("tab5").setIndicator(getTabItemView(4)) ,HomePageView.class, null);
+		    mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(getTabItemView(1)) ,ClassifyPageView.class, null);
+		    mTabHost.addTab(mTabHost.newTabSpec("tab3").setIndicator(getTabItemView(2)) ,SearchPageView.class, null);
+		    mTabHost.addTab(mTabHost.newTabSpec("tab4").setIndicator(getTabItemView(3)) ,PersonPageView.class, null);
+		    mTabHost.addTab(mTabHost.newTabSpec("tab5").setIndicator(getTabItemView(4)) ,MorePageView.class, null);
 		    mTabHost.setOnTabChangedListener(new OnTabChangeListener() {
 				
 				@Override

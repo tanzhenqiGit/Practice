@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/aiqi_tithle_view" />
+
+    <LinearLayout
+        android:id="@+id/aiqi_classify_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/aiqi_classify_img1"
+   			style="@style/classify_img"
+            android:src="@drawable/classify_movie_bg"
+            tools:ignore="ContentDescription" />
+        
+          <ImageView
+            android:id="@+id/aiqi_classify_img2"
+      		style="@style/classify_img"
+            android:src="@drawable/classify_tv_bg"
+            tools:ignore="ContentDescription" />
+          
+            <ImageView
+            android:id="@+id/aiqi_classify_img3"
+         	style="@style/classify_img"
+            android:src="@drawable/classify_cartoon_bg"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:id="@+id/aiqi_classify_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/aiqi_classify_img4"
+        	 style="@style/classify_img"
+            android:src="@drawable/classify_fun_bg"
+            tools:ignore="ContentDescription" />
+        
+          <ImageView
+            android:id="@+id/aiqi_classify_img5"
+         	style="@style/classify_img"
+            android:src="@drawable/classify_video_clips_bg"
+            tools:ignore="ContentDescription" />
+          
+            <ImageView
+            android:id="@+id/aiqi_classify_img6"
+        	style="@style/classify_img"
+            android:src="@drawable/classify_music_bg"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    
+     
+         
+     <LinearLayout
+        android:id="@+id/aiqi_classify_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:gravity="center_horizontal"     
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/aiqi_classify_img7"
+			style="@style/classify_img"
+            android:src="@drawable/classify_qiyi_work_bg"
+            tools:ignore="ContentDescription" />
+        
+          <ImageView
+            android:id="@+id/aiqi_classify_img8"
+			style="@style/classify_img"
+            android:src="@drawable/classify_record_bg"
+            tools:ignore="ContentDescription" />
+          
+            <ImageView
+            android:id="@+id/aiqi_classify_img9"
+			style="@style/classify_img"
+            android:src="@drawable/classify_tourism_bg"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/aiqi_classify_layout4"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/aiqi_classify_img10"
+			style="@style/classify_img"
+            android:src="@drawable/classify_publicity_bg"
+            tools:ignore="ContentDescription" />
+        
+
+        <ImageView
+            android:id="@+id/aiqi_classify_img11"
+			style="@style/classify_img"
+            android:src="@drawable/channel_type_movie_normal"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+              
+        <ImageView
+            android:id="@+id/aiqi_classify_img12"
+			style="@style/classify_img"
+            android:src="@drawable/channel_type_movie_normal"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</LinearLayout>
