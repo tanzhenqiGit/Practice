@@ -15,4 +15,9 @@
 	<string name="movie_order">集数 ：</string>
 	<string name="movie_order_number">37</string>
 	<string name="movie_demo">承影之奇艺UIdemo</string>
+	<string name="search_text">搜索</string>
+	<string name="hot_search">热门搜索</string>
+	<string name="search_history">历史搜索</string>
+	<string name="clear_search_history">清楚</string>
+	
 </resources>

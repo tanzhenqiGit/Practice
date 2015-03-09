@@ -36,6 +36,20 @@
         <item>使用帮助</item>
         <item>更多</item>
     </string-array>
+    
+	<string-array name="searchInfoContents">
+        <item>开心魔法</item>
+        <item>奋斗</item>
+        <item>导火索</item>
+        <item>碟中谍4</item>
+        <item>碟中碟3</item>
+        <item>美人心计</item>
+        <item>倒霉熊</item>
+        <item>火影忍者</item>
+        <item>喜洋洋</item>
+        <item>北京爱情故事</item>
+	</string-array>
+	
 </resources>
     
     
