@@ -14,7 +14,9 @@ public final class R {
     }
     public static final class array {
         public static final int aiqiTabContents=0x7f050001;
+        public static final int listAccountContents=0x7f050003;
         public static final int listGroupContents=0x7f050002;
+        public static final int listMoreInfoContents=0x7f050004;
         public static final int projectContents=0x7f050000;
     }
     public static final class attr {
@@ -123,7 +125,7 @@ containing a value of this type.
         public static final int expand_list_group_indecator=0x7f020028;
         public static final int flickbar_bg=0x7f020029;
         public static final int flickbtn_bg_center_normal=0x7f02002a;
-        public static final int green=0x7f020052;
+        public static final int green=0x7f020053;
         public static final int home_group_bg=0x7f02002b;
         public static final int ic_launcher=0x7f02002c;
         public static final int icon_1_c=0x7f02002d;
@@ -140,32 +142,33 @@ containing a value of this type.
         public static final int item_more_bg_selected=0x7f020038;
         public static final int list_indecator_button=0x7f020039;
         public static final int list_indecator_button_down=0x7f02003a;
-        public static final int list_item_bg_album_normal=0x7f02003b;
-        public static final int list_item_bg_album_selected=0x7f02003c;
-        public static final int list_item_bg_operate=0x7f02003d;
-        public static final int list_item_bg_operate_selected=0x7f02003e;
-        public static final int list_item_divide_operate=0x7f02003f;
-        public static final int list_seletor_translate=0x7f020040;
-        public static final int loadmovie_bg=0x7f020041;
-        public static final int logo=0x7f020042;
-        public static final int phonetabview_bg=0x7f020043;
-        public static final int phonetitlebar_bg=0x7f020044;
-        public static final int play_btn=0x7f020045;
-        public static final int play_btn_pressed=0x7f020046;
-        public static final int ratingbar_full_empty=0x7f020047;
-        public static final int ratingbar_full_filled=0x7f020048;
-        public static final int search_history_clear_btn_bg_normal=0x7f020049;
-        public static final int search_history_clear_btn_bg_press=0x7f02004a;
-        public static final int search_main_tree_bg=0x7f02004b;
-        public static final int t1=0x7f02004c;
-        public static final int t2=0x7f02004d;
-        public static final int t3=0x7f02004e;
-        public static final int transparent=0x7f020050;
-        public static final int video_cover_default=0x7f02004f;
-        public static final int write=0x7f020051;
+        public static final int list_item_bg=0x7f02003b;
+        public static final int list_item_bg_album_normal=0x7f02003c;
+        public static final int list_item_bg_album_selected=0x7f02003d;
+        public static final int list_item_bg_operate=0x7f02003e;
+        public static final int list_item_bg_operate_selected=0x7f02003f;
+        public static final int list_item_divide_operate=0x7f020040;
+        public static final int list_seletor_translate=0x7f020041;
+        public static final int loadmovie_bg=0x7f020042;
+        public static final int logo=0x7f020043;
+        public static final int phonetabview_bg=0x7f020044;
+        public static final int phonetitlebar_bg=0x7f020045;
+        public static final int play_btn=0x7f020046;
+        public static final int play_btn_pressed=0x7f020047;
+        public static final int ratingbar_full_empty=0x7f020048;
+        public static final int ratingbar_full_filled=0x7f020049;
+        public static final int search_history_clear_btn_bg_normal=0x7f02004a;
+        public static final int search_history_clear_btn_bg_press=0x7f02004b;
+        public static final int search_main_tree_bg=0x7f02004c;
+        public static final int t1=0x7f02004d;
+        public static final int t2=0x7f02004e;
+        public static final int t3=0x7f02004f;
+        public static final int transparent=0x7f020051;
+        public static final int video_cover_default=0x7f020050;
+        public static final int write=0x7f020052;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a002b;
+        public static final int action_settings=0x7f0a002f;
         public static final int aiqi_classify_img1=0x7f0a0001;
         public static final int aiqi_classify_img10=0x7f0a000d;
         public static final int aiqi_classify_img11=0x7f0a000e;
@@ -204,11 +207,15 @@ containing a value of this type.
         public static final int aiqi_expand_list_hander_view_layout=0x7f0a0022;
         public static final int aiqi_expand_list_hander_view_txt=0x7f0a0023;
         public static final int aiqi_gallery_item_view_img=0x7f0a0025;
-        public static final int common_list_main_list=0x7f0a0027;
-        public static final int home_page_view_list=0x7f0a0028;
+        public static final int aiqi_list_item_img=0x7f0a0028;
+        public static final int aiqi_list_item_txt=0x7f0a0027;
+        public static final int aiqi_more_list=0x7f0a0029;
+        public static final int aiqi_person_list=0x7f0a002a;
+        public static final int common_list_main_list=0x7f0a002b;
+        public static final int home_page_view_list=0x7f0a002c;
         public static final int realtabcontent=0x7f0a0026;
-        public static final int tab_item_view_img=0x7f0a0029;
-        public static final int tab_item_view_txt=0x7f0a002a;
+        public static final int tab_item_view_img=0x7f0a002d;
+        public static final int tab_item_view_txt=0x7f0a002e;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
@@ -218,13 +225,14 @@ containing a value of this type.
         public static final int aiqi_expand_lsit_hander_view=0x7f030004;
         public static final int aiqi_gallery_item_view=0x7f030005;
         public static final int aiqi_home=0x7f030006;
-        public static final int aiqi_more=0x7f030007;
-        public static final int aiqi_person=0x7f030008;
-        public static final int aiqi_search=0x7f030009;
-        public static final int aiqi_tithle_view=0x7f03000a;
-        public static final int common_llist_main=0x7f03000b;
-        public static final int home_page_view=0x7f03000c;
-        public static final int tab_item_view=0x7f03000d;
+        public static final int aiqi_list_item=0x7f030007;
+        public static final int aiqi_more=0x7f030008;
+        public static final int aiqi_person=0x7f030009;
+        public static final int aiqi_search=0x7f03000a;
+        public static final int aiqi_tithle_view=0x7f03000b;
+        public static final int common_llist_main=0x7f03000c;
+        public static final int home_page_view=0x7f03000d;
+        public static final int tab_item_view=0x7f03000e;
     }
     public static final class menu {
         public static final int home=0x7f090000;
@@ -272,8 +280,9 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        public static final int account_more_list_text=0x7f080003;
         public static final int activity_title_text=0x7f080002;
-        public static final int classify_img=0x7f080003;
+        public static final int classify_img=0x7f080004;
     }
     public static final class styleable {
         /** Attributes that can be used with a FlowGalleryIndicator.

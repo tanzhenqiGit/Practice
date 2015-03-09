@@ -45,7 +45,7 @@ public class AiQiHome extends FragmentActivity {
 		    mTabHost.addTab(mTabHost.newTabSpec("tab4").setIndicator(getTabItemView(3)) ,PersonPageView.class, null);
 		    mTabHost.addTab(mTabHost.newTabSpec("tab5").setIndicator(getTabItemView(4)) ,MorePageView.class, null);
 		    mTabHost.setOnTabChangedListener(new OnTabChangeListener() {
-				
+			
 				@Override
 				public void onTabChanged(String tabId) {
 					updateTabImage();

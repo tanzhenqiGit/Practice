@@ -22,6 +22,20 @@
         <item>3月片花速递</item>
         <item>动漫乐园</item>
     </string-array>
+    
+    <string-array name="listAccountContents">
+        <item>离线观看</item>
+        <item>播放记录</item>
+        <item>收藏夹</item>
+        <item>我的帐号</item>
+    </string-array>
+    
+    <string-array name="listMoreInfoContents">
+        <item>设置</item>
+        <item>信息反馈</item>
+        <item>使用帮助</item>
+        <item>更多</item>
+    </string-array>
 </resources>
     
     

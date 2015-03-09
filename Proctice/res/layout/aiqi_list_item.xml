@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables" >
+    
+    
+    <TextView
+        android:id="@+id/aiqi_list_item_txt"
+		style="@style/account_more_list_text"
+       />
+    
+    
+    <ImageView
+        android:id="@+id/aiqi_list_item_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_divide_operate"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

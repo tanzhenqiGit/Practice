@@ -5,4 +5,12 @@
     android:orientation="vertical" >
     
 
+    <include layout="@layout/aiqi_tithle_view"/>
+    <ListView 
+        android:id="@+id/aiqi_person_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+    </ListView>
 </LinearLayout>
