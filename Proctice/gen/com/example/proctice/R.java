@@ -280,7 +280,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:count
+          @attr name com.example.proctice:count
         */
         public static final int FlowGalleryIndicator_count = 0;
         /**
@@ -292,7 +292,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:point_normal_color
+          @attr name com.example.proctice:point_normal_color
         */
         public static final int FlowGalleryIndicator_point_normal_color = 4;
         /**
@@ -308,7 +308,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:point_radius
+          @attr name com.example.proctice:point_radius
         */
         public static final int FlowGalleryIndicator_point_radius = 5;
         /**
@@ -320,7 +320,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:point_seleted_color
+          @attr name com.example.proctice:point_seleted_color
         */
         public static final int FlowGalleryIndicator_point_seleted_color = 3;
         /**
@@ -336,7 +336,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:point_size
+          @attr name com.example.proctice:point_size
         */
         public static final int FlowGalleryIndicator_point_size = 2;
         /**
@@ -352,7 +352,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:space
+          @attr name com.example.proctice:space
         */
         public static final int FlowGalleryIndicator_space = 1;
     };

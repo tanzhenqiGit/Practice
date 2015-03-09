@@ -10,13 +10,14 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
+
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.BaseExpandableListAdapter;
@@ -131,27 +132,32 @@ public class HomePageView extends Fragment{
 		switch (msg.what)
 		{
 		case MSG_GALLERY_CHANGED:
-			 int curPos = mGallery.getSelectedItemPosition();
-			 if (curPos < mGalleryAdapter.getCount() - 1) {
-				 curPos++;
-			 } else {
-				 curPos = 0;
-			 }
-			 
-		
-			 //mGallery.setSelection(curPos, true);
+//			 int curPos = mGallery.getSelectedItemPosition();
+//			 
+//			 
+//			 if (curPos < mGalleryAdapter.getCount() - 1) {
+//				 curPos++;
+//			 } else {
+//				 curPos = 0;
+//			 }
+//			 
+//	
+//			 mGallery.setLayoutAnimation(new LayoutAnimationController(
+//					  AnimationUtils.loadAnimation(this.getActivity(),
+//							  R.anim.gallery_in)));
+//			 mGallery.setSelection(curPos, true);
 
-			 mGallery.setLayoutAnimation(new LayoutAnimationController(
-					  AnimationUtils.loadAnimation(this.getActivity(),
-							  R.anim.gallery_in)));
-//			MotionEvent e1 = MotionEvent.obtain(SystemClock.uptimeMillis(),
-//					SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN,
-//					89.333336f, 265.33334f, 0);
-//			MotionEvent e2 = MotionEvent.obtain(SystemClock.uptimeMillis(),
-//					SystemClock.uptimeMillis(), MotionEvent.ACTION_UP,
-//					300.0f, 238.00003f, 0);
-//
-//			mGallery.onFling(e1, e2, -1300, 0);
+			MotionEvent e1 = MotionEvent.obtain(SystemClock.uptimeMillis(),
+					SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN,
+					50.0f, 250f, 0);
+			MotionEvent e2 = MotionEvent.obtain(SystemClock.uptimeMillis(),
+					SystemClock.uptimeMillis(), MotionEvent.ACTION_UP,
+					300.0f, 250.0f, 0);
+
+			mGallery.onFling(e1, e2, -1800, 0);
+			e1.recycle();
+			e2.recycle();
+			msg.recycle();
 			break;
 		default:
 			
@@ -167,6 +173,7 @@ public class HomePageView extends Fragment{
 	private GalleryAdapter mGalleryAdapter;
 	private Timer mTimer;
 	private final int MSG_GALLERY_CHANGED = 0x10;
+	@SuppressLint("HandlerLeak")
 	private Handler mHandler = new Handler()
 	{
 

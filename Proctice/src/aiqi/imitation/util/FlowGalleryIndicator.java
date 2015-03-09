@@ -2,7 +2,7 @@
 * Copyright 2015 TanZhenqi's Studio.
 * All Right Reserved.
 * @author author E-mail: tan_zhenqi@163.com.
-* @version create time:2015-3-7 обнГ4:20:39.
+* @version create time:2015-3-7 О©╫О©╫О©╫О©╫4:20:39.
 */ 
 package aiqi.imitation.util;
 
@@ -80,8 +80,6 @@ public class FlowGalleryIndicator extends View{
 					mRadius, 
 					paint);
 		}
-		Log.d(TAG.toString(), "view height:" + getHeight() +
-				"and width:" + getWidth());
 
 		
 	}
