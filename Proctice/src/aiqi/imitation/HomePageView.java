@@ -107,6 +107,7 @@ public class HomePageView extends Fragment{
 						
 					}
 				});
+				/*
 				mTimer = new Timer();
 				mTimer.schedule(new TimerTask() {
 					
@@ -118,7 +119,7 @@ public class HomePageView extends Fragment{
 						}
 					}
 				}, 0, 5 * 1000);
-				
+				*/
 			} else {
 				Log.e(mTAG.toString(), "HomePageView initialize mExpandListHeaderView == null");
 				return;

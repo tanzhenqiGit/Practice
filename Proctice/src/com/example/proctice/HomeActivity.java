@@ -20,6 +20,10 @@ public class HomeActivity extends CommonListActivity<String> {
 			Intent aiqiIntent = new Intent(HomeActivity.this, AiQiHome.class);
 			startActivity(aiqiIntent);
 			break;
+		case GAME_VIEW:
+			Intent gameViewIntent = new Intent(HomeActivity.this, GameActivity.class);
+			startActivity(gameViewIntent);
+			break;
 		default:
 			break;
 		}
@@ -39,4 +43,5 @@ public class HomeActivity extends CommonListActivity<String> {
 	private String[] mContents;
 	private LOG_String TAG = new LOG_String();
 	public final int AIQI = 0;
+	private final int GAME_VIEW = 1;
 }
